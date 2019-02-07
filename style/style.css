@@ -1,0 +1,349 @@
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+	height: 100%;
+}
+
+.fullPage {
+	height: 95%;
+}
+
+.firstComponent {
+	height: 80px;
+	width: 200px;
+	background-color: blue;
+	cursor: pointer;
+}
+
+.signUp {
+
+	width: 120px;
+	height: 40px;
+	border: 1px black solid;
+	cursor: pointer;
+	margin-top: 30px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.signInForm {
+	display: flex;
+	flex-direction: column;
+}
+
+.loginInput {
+	margin-bottom: 10px;
+}
+
+.signUpForm {
+	display: flex;
+	flex-direction: column;
+}
+
+.signUpInput {
+	margin-bottom: 10px;
+}
+
+.navBar {
+	display: flex;
+	flex-direction: row;
+	padding-top: 10px;
+}
+
+.navBar > div {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.logOut {
+	cursor: pointer;
+	color: #0275d8;
+}
+
+.homeWrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.profileWrapper {
+	margin-right: 50px;
+}
+
+.singleChecklist {
+	height: 45px;
+	width: 500px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: .5px black solid;
+}
+
+.singleChecklistStart{
+	display: flex;
+	flex-direction: row;
+}
+
+.checklistWrapper {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.checklistItems {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.checklistBack {
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.checklistTop {
+	width: 500px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.checklistBot {
+	display: flex;
+}
+
+.checklistTopAdd{
+	font-size: 28px;
+	cursor: pointer;
+}
+
+.checklistItem {
+	width: 500px;
+	height: 40px;
+	border-bottom: .5px black solid;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	display: flex;
+	padding-left: 8px; 
+	padding-right: 5px;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+}
+
+.checklistItemOption {
+	font-size: 28px;
+	cursor: pointer;
+}
+
+.itemNameWrapper {
+	margin-left: 20px;
+}
+
+.itemOptionBuffer {
+	height: 40px;
+	width: 10px;
+	cursor: pointer;
+}
+
+.checklistItemName {
+	display: flex;
+	align-items: center;
+}
+
+.checklistItemNotFinished {
+	font-size: 22px;
+	cursor: pointer;
+}
+
+.checklistItemFinished {
+	font-size: 22px;
+	cursor: pointer;
+}
+
+.checklistItemMenu {
+	height: 35px;
+	background-color: green;
+}
+
+.hiddenIcon {
+	opacity: 0;
+	animation-name: hideIcon;
+	animation-duration: 1s;
+	display: none;
+
+}
+
+@keyframes hideIcon {
+	from {opacity: 100;}
+	to {opacity: 0;}
+
+	
+}
+
+.showingIcon {
+	display: block;
+	opacity: 100;
+	cursor: pointer;
+	animation-name: showIcon;
+	animation-duration: 1.5s;
+}
+
+@keyframes showIcon {
+	from {opacity: 0;}
+	to { opacity: 100; }
+}
+
+.hideChecklistItemMenu {
+	width: 0px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    -webkit-animation-name: hideMenu; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: hideMenu;
+    animation-duration: 1s;
+}
+
+@keyframes hideMenu {
+    from {width: 60px;}
+    to {width: 0px;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes hideMenu {    
+    from {width: 60px;}
+    to {width: 0px;}
+}
+
+.showChecklistItemMenu {
+	width: 60px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    -webkit-animation-name: showMenu; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: showMenu;
+    animation-duration: 1s;
+}
+
+@keyframes showMenu {
+    from {width: 0px;}
+    to {width: 60px;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes showMenu {    
+    from {width: 0px;}
+    to {width: 60px;}
+}
+
+
+.showChecklistTitleMenu {
+	width: 90px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    -webkit-animation-name: showTitleMenu; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: showTitleMenu;
+    animation-duration: 1s;
+}
+
+@keyframes showTitleMenu {
+    from {width: 0px;}
+    to {width: 90px;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes showTitleMenu {    
+    from {width: 0px;}
+    to {width: 90px;}
+}
+
+.hideChecklistTitleMenu {
+	width: 0px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    -webkit-animation-name: hideTitleMenu; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: hideTitleMenu;
+    animation-duration: 1s;
+}
+
+@keyframes hideTitleMenu {
+    from {width: 90px;}
+    to {width: 0px;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes hideTitleMenu {    
+    from {width: 90px;}
+    to {width: 0px;}
+}
+
+
+
+.newChecklistName {
+	border: none;
+	border-bottom: .5px black solid; 
+	margin-left: 20px;
+}
+
+.profileIcon {
+	margin-right: 15px;
+}
+
+
+
+.landingCover{
+	z-index: -100;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.accountHolder {
+	width: 100%;
+	height: 500px;
+	border: 1px black solid;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.landingPage {
+	width: 100%;
+	height: 100%;
+	
+}
+
+input {
+	border: none;
+	border-bottom: 1px black solid;
+}
